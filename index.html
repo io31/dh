@@ -376,6 +376,21 @@
 					</ul>
 				</main>
 			</main>
+			
+			<script>
+				function refresh(){
+				url = location.href;
+				console.log(url);
+				var once = url.split("#");
+				if (once[1] != 1) {
+				url += "#1";
+				self.location.replace(url);
+				window.location.reload();
+				}
+				}
+				setTimeout('refresh()', 1000);
+			</script> 
+			
 			<!-- 点击特效 -->
 			<canvas class="fireworks"
 				style="position: fixed; left: 0px; top: 0px; z-index: 99999999; pointer-events: none; width: 1153px; height: 746px;"
@@ -389,19 +404,7 @@
 						"%3Cspan id='cnzz_stat_icon_1279645265'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279645265' type='text/javascript'%3E%3C/script%3E"
 					));
 				</script>
-				<script>
-function refresh(){
-url = location.href;
-console.log(url);
-var once = url.split("#");
-if (once[1] != 1) {
-url += "#1";
-self.location.replace(url);
-window.location.reload();
-}
-}
-setTimeout('refresh()', 1000);
-</script> 
+				
 			</div>
 			<!-- 统计完毕-->
 
