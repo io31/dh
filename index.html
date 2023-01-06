@@ -1,440 +1,244 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
-
-		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-		<meta name="viewport"
-			content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>发布页</title>
-		<meta name="keywords" content="网址导航">
-		<meta name="description" content="发布页">
-
-		<link rel="stylesheet" href="./style/1.css" />
-		<link rel="shortcut icon" href="./img/favicon.ico">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+		<title>十一发布页</title>
+		<meta name="description" content="期待与更多的人相遇！">
+		<meta name="keywords" content="天环网络,天环网络科技,天环源码网,独角兽网络,小程序源码,天环小程序,天环官网,天环付费,独角兽网络">
+		<link rel="apple-touch-icon-precomposed" href="images/avatar.bab2b7d4.jpeg">
+		<link rel="stylesheet" type="text/css" href="css/h.9c69ed6c.css">
+		<link rel="stylesheet" type="text/css" href="css/nekotora.99cf6f8c.css">
+		<link rel="shortcut icon" href="./imagesg/favicon.ico">
 	</head>
 	<body>
 		<style>
-			a,
-			body,
-			div,
-			footer,
-			h1,
-			h2,
-			h3,
-			h4,
-			h5,
-			h6,
-			header,
-			html,
-			i,
-			img,
-			menu,
-			nav,
-			p,
-			ul,
-			li {
-				margin: 0;
-				padding: 0;
-				border: 0;
-				font-size: 100%;
-				font: inherit;
-				vertical-align: baseline;
-				list-style: none;
-			}
-
-			* {
-				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-				-webkit-tap-highlight-color: transparent;
-				/* For some Androids */
-			}
-
-			*,
-			:after,
-			:before {
-				box-sizing: border-box;
-			}
-
-			a {
-				text-decoration: none;
-				color: #ffffff;
-				-webkit-touch-callout: none;
-				-webkit-user-select: none;
-				-webkit-tap-highlight-color: transparent;
-				outline: none;
-				transition: color .1s ease;
-			}
-
-			html {
-				overflow-x: hidden;
-				font-size: 62.5%;
-			}
-
-			html,
-			body {
-				position: relative;
-				height: 100%;
-				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-			}
-
-			body {
-				font-family: "Microsoft Yahei", sans-serif;
-				font-size: 15px;
-				background-color: #f3f5f7;
-				color: #333;
-				background: url('https://cdn.seovx.com/?mom=302');
-				
-				max-width: 100%; max-height: 100%;
-				background-repeat: no-repeat;
-				background-size: cover;
-				background-attachment: fixed;
-				background-position-x: center;
-				max-width: 100%;
-				max-height: 100%;
-			}
-
-			header {
-				width: 100%;
-				height: 60px;
-				background-color: rgba(255, 255, 255, 1);
-			}
-
-			main {
-				width: 100%;
-				padding: 10px;
-			}
-
-			.max {
-				max-width: 750px;
-				margin: 0 auto;
-			}
-
-			.flex {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-			}
-
-			.flex-center {
-				justify-content: center !important;
-			}
-
-			.shadow {
-				background-color: #fff;
-			}
-
-			.header {
-				height: 60px;
-			}
-
-			.header h1 {
-				font-size: 18px;
-			}
-
-			.notice {
-				width: 100% !important;
-				margin: 0 auto 10px !important;
-				padding: 10px;
-				border-radius: 5px !important;
-				background-color: rgba(254, 168, 2, .15) !important;
-			}
-
-			.notice i {
-				font-size: 15px;
-				color: #FEA802;
-			}
-
-			.notice marquee {
-				width: calc(100% - 25px);
-			}
-
-			.notice h2 {
-				font-size: 15px;
-				color: #FEA802;
-			}
-
-			.app {
-				width: 100%;
-				padding: 15px 10px 10px;
-				margin: 0 auto 10px;
-				background-color: rgba(255, 255, 255, 0.4);
-				border-radius: 5px;
-			}
-
-			.app-meta {
-				padding: 10px 0 25px;
-			}
-
-			.app-meta h1 {
-				font-size: 16px;
-				color: #000;
-			}
-
-			.app-meta h1 i {
-				font-size: 16px;
-				color: #06f;
-				margin: 0 5px 0 0;
-			}
-
-			.app-meta h2 {
-				font-size: 14px;
-				color: #999;
-			}
-
-			.app ul {
-				flex-wrap: wrap;
-				justify-content: flex-start !important;
-			}
-
-			.app-item {
-				width: calc(50% - 5px);
-				margin: 0 10px 15px 0;
-				padding: 10px;
-				background-color: rgba(255, 255, 255, 0.3);
-				border-radius: 5px;
-				overflow: hidden;
-			}
-
-			.app-item img {
-				width: 26px;
-				height: 26px;
-				border-radius: 100%;
-				overflow: hidden;
-			}
-
-			.app-item h1 {
-				width: calc(100% - 56px);
-				font-size: 14px;
-				font-weight: bold;
-				color: #666;
-			}
-
-			.app-item i {
-				font-size: 20px;
-				color: #ccc;
-			}
-
-			.app-item:nth-child(2n) {
-				margin: 0 0 15px 0;
+			.toast-bottom-center {
+				position: absolute;
+				left: 30px;
+				right: 10px;
+				top: 20px;
 			}
 		</style>
-		<header>
-			<div class="header max flex flex-center">
-				<h1>欢迎光临🥀十一发布页</h1>
-			</div>
 
-			<main class="max">
-				<!--公告-->
-				<div class="notice flex">
-					<i class="fan son-gonggao"></i>
-					<marquee>
-						<h2 style="color: white;">承接以下业务，Android产品贴牌，网站搭建，低价软件出售，图片处理，更多业务咨询，请联系客服 ！</h2>
-					</marquee>
-				</div>
-				<!--大板块-->
-				<main class="app">
-					<div class="app-meta flex">
-						<h1><i class="fan son-xing"></i>站点导航</h1>
-						<h2>各种资源，总有你需要的！</h2>
+		<div class="background">
+			<canvas id="startrack"></canvas>
+			<div class="cover"></div>
+		</div>
+		<div class="main">
+			<div class="ch intro">
+				<div class="container">
+					<div class="hello">
+						<h1 id="slogan">思考中...</h1>
+						<h2>
+							<div class="circle"> <span></span> <span></span>
+								<span></span>
+							</div>十一发布页
+						</h2>
 					</div>
-					<ul class="flex">
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://io31.github.io/jjdh/" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">极简导航</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://pan.ten9.vip" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">十一网盘</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<!--<li class="app-item">
-							<a class="flex" target="_blank" href="https://udid.ten9.vip" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">十一自动定制</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>-->
-						<!--<li class="app-item">
-							<a class="flex" target="_blank" href="https://io31.github.io/bz/" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">免费壁纸分享</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>-->
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://k.youshop10.com/2NvpAgu4" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">红包封面批发</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-
-						<li class="app-item">
-							<a class="flex" target="_blank" href="http://xx98.dpysc.top/" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">软件自助商城</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://k.youshop10.com/YMFKQs38" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">加盟红包代理</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<!---->
-
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://poki.cn/" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">免费在线游戏</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<!-- <li class="app-item">
-                <a class="flex" target="_blank" href="https://www.7kone.com/" rel="bookmark">
-                    <img class="app-item-img" src="img/site.png">
-                    <h1 class="app-item-title">待添加</h1>
-                    <i class="fan son-you"></i>
-                    </a>
-                </li>
-            <li class="app-item">
-                <a class="flex" target="_blank" href="https://www.lxh5068.com/" rel="bookmark">
-                    <img class="app-item-img" src="img/site.png">
-                    <h1 class="app-item-title">待添加</h1>
-                    <i class="fan son-you"></i>
-                    </a>
-                </li>
-            <li class="app-item">
-                <a class="flex" target="_blank" href="https://www.lxh5068.com/" rel="bookmark">
-                    <img class="app-item-img" src="img/site.png">
-                    <h1 class="app-item-title">待添加</h1>
-                    <i class="fan son-you"></i>
-                    </a>
-                </li>-->
-					</ul>
-				</main>
-				<!--大板块-->
-				<main class="app">
-					<div class="app-meta flex">
-						<h1><i class="fan son-xing"></i>福利推荐</h1>
-						<a href="sc.html">
-							<h2 style="color: red;">点击联系客服</h2>
+				</div>
+			</div>
+			<div class="ch about">
+				<div class="container">
+					<h2 class="chtitle">Who is <span>十一发布页</span>？</h2>
+					<div class="clear">
+						<div class="introduct">
+							<img class="avatar" src="images/logo.jpg">
+							<P> 这里提供免费服务，不定期更新好玩的内容</p>
+							<p style="padding-bottom:1em;">How lucky to meet you!</p>
+							<p>你好，I am <sup>十一</sup>我们趋行在人生这个亘古的旅行</p>
+							<p>就是要在坎坷中奔跑，在在挫折里涅槃</p>
+							<div class="chatbox">
+								<div class="line loading"> <span></span>
+									<span></span> <span></span>
+								</div>
+							</div>
+						</div>
+						<ul class="skill clear">
+							<li>
+								<p>低价软件出售</p>
+								<div class="progress">
+									<div style="width:100%;"></div>
+									<span>软件批发源头</span>
+								</div>
+							</li>
+							<li>
+								<p>Android</p>
+								<div class="progress">
+									<div style="width:55%;"></div>
+									<span>Android破解</span>
+								</div>
+							</li>
+							<li>
+								<p>资源共享</p>
+								<div class="progress">
+									<div style="width:98%;"></div>
+									<span>美好的事情总是从共享开始的</span>
+								</div>
+							</li>
+							<li>
+								<p>网站搭建</p>
+								<div class="progress">
+									<div style="width:65%;">
+									</div><span>让自己舒服程度的能力</span>
+								</div>
+							</li>
+							<li>
+								<p>图片处理</p>
+								<div class="progress">
+									<div style="width:20%;"></div>
+									<span>观测世界程度的能力</span>
+								</div>
+							</li>
+							<li>
+								<p>搞事情</p>
+								<div class="progress">
+									<div style="width:82%;"></div>
+									<span>让事情发生程度的能力</span>
+								</div>
+							</li>
+							<!-- <li>
+								<p>魔法</p>
+								<div class="progress">
+									<div style="width:12%;"></div>
+									<span>和普通人相同程度的能力</span>
+								</div>
+							</li>
+							<li>
+								<p>MoePower</p>
+								<div class="progress">
+									<div style="width:99%;"></div>
+									<span>成为萌二程度的能力</span>
+								</div>
+							</li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="find ch">
+				<div class="container links">
+					<h2 class="chtitle">我走过的地方<span>地方</span></h2>
+					<div class="clear col-3">
+						<a href="https://io31.github.io/dh/" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#28a9e0"></div>
+								<div class="inner"> <span>十一发布页</span> </div>
+							</div>
+						</a>
+						<a href="https://io31.github.io/jjdh" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#28a9e0"></div>
+								<div class="inner"> <span>极简导航</span> </div>
+							</div>
+						</a>
+						<a href="https://pan.ten9.vip/" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#28a9e0"></div>
+								<div class="inner"> <span>十一共享网盘</span> </div>
+							</div>
 						</a>
 					</div>
-					<ul class="flex">
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://io31.github.io/pt/" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">在线拼图</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://www.qtool.net/imgmatting/clip-body"
-								rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">在线抠图</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://io31.github.io/ewm/" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">二维码生成</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://io31.github.io/xck/" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">行程卡纪念版</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://io31.github.io/qq" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">QQ查询手机号</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://io31.github.io/xn/" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">手机性能测试</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<!--<li class="app-item">
-							<a class="flex" target="_blank" href="http://ten9cc.top/app/ico/index.php" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">ICO图标制作</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://io31.github.io/dh/djs.html" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">春节倒计时</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>-->
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://video.ciding.cc/" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">短视频去水印</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://wwa.lanzoui.com/b01nsro7g" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">安卓破解分享</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://sh520i.github.io/dh/sp.html" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">随机电影观看</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<!--<li class="app-item">
-							<a class="flex" target="_blank" href="https://liumingye.gitee.io/quarkhomepage/"
-								rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">仿via浏览器</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>
-						<li class="app-item">
-							<a class="flex" target="_blank" href="https://sh520i.github.io/tj.cn/#1" rel="bookmark">
-								<img class="app-item-img" src="img/site.png">
-								<h1 class="app-item-title">太极微X模块</h1>
-								<i class="fan son-you"></i>
-							</a>
-						</li>-->
-						<!--<li class="app-item">
-                <a class="flex" target="_blank" href="https://www.7kone.com/" rel="bookmark">
-                    <img class="app-item-img" src="img/site.png">
-                    <h1 class="app-item-title">待添加</h1>
-                    <i class="fan son-you"></i>
-                    </a>
-                </li>-->
-					</ul>
-				</main>
-			</main>
-
-			<script>
+					<div class="clear">
+						<a href="https://io31.github.io/jjdh" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#28a9e0"></div>
+								<div class="inner"> <i class="icon-instagram"></i>
+									<span>极简导航</span>
+								</div>
+							</div>
+						</a>
+						<a href="http://xx98.dpysc.top/" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#28a9e0"></div>
+								<div class="inner"> <i class="icon-instagram"></i> <span>软件商城</span> </div>
+							</div>
+						</a>
+						<a href="https://poki.cn/" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#e6162d"></div>
+								<div class="inner"> <i class="icon-instagram"></i> <span>免费在线游戏</span> </div>
+							</div>
+						</a>
+						<a href="https://io31.github.io/pt/" target="_blank">
+							<div class="item">
+								<div class="bg"  style="background-color:#0f88eb"></div>
+								<div class="inner"><i class="icon-instagram"></i>
+									<span>在线拼图</span>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.qtool.net/imgmatting/clip-body" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#28a9e0"></div>
+								<div class="inner"> <i class="icon-instagram"></i> <span>在线抠图</span> </div>
+							</div>
+						</a>
+						<a href="https://io31.github.io/ewm/" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#0f88eb"></div>
+								<div class="inner"> <i class="icon-instagram"></i>
+									<span>二维码生成</span>
+								</div>
+							</div>
+						</a>
+						<a href="http://music.163.com" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#f12d35"></div>
+								<div class="inner"> <i class="icon-instagram"></i>
+									<span>行程卡纪念版</span>
+								</div>
+							</div>
+						</a>
+						<a href="https://io31.github.io/qq/" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#f9a2a8"></div>
+								<div class="inner"> <i class="icon-instagram"></i> <span>Q绑查询</span> </div>
+							</div>
+						</a>
+						<a href="https://io31.github.io/qq/" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#f12d35"></div>
+								<div class="inner"> <i class="icon-instagram"></i> <span>手机性能测试</span> </div>
+							</div>
+						</a>
+						<a href="https://video.ciding.cc/" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#0f88eb"></div>
+								<div class="inner"> <i class="icon-instagram"></i> <span>短视频去水印</span> </div>
+							</div>
+						</a>
+						<a href="https://sh520i.github.io/dh/sp.html" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#f12d35"></div>
+								<div class="inner"> <i class="icon-instagram"></i> <span>随机电影观看</span> </div>
+							</div>
+						</a>
+						<a href="http://eleven.ten9.vip/" target="_blank">
+							<div class="item">
+								<div class="bg" style="background-color:#b600ff"></div>
+								<div class="inner"> <i class="icon-instagram"></i> <span>免费壁纸</span> </div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="gate ch">
+				<div class="container links">
+					<div class="footer ch">
+						<div class="container">
+							<h3>只要许愿</h3>
+							<p>就会成功，对吧</p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330
+								height=86
+								src="//music.163.com/outchain/player?type=2&id=548633609&auto=1&height=66"></iframe>
+							<p class="c"><a href="https://beian.miit.gov.cn/">2018-2023 </a></p>
+						</div>
+					</div>
+					<script src="js/page.3a0791a3.js"></script>
+					<script type="text/javascript" src="js/stats.js" charset="UTF-8">
+					</script>
+					<script>
 				function refresh() {
 					url = location.href;
 					console.log(url);
@@ -453,19 +257,7 @@
 				style="position: fixed; left: 0px; top: 0px; z-index: 99999999; pointer-events: none; width: 1153px; height: 746px;"
 				width="2306" height="1492">
 			</canvas>
-			<script type="text/javascript" src="./style/djtx.js"></script>
-			<!-- 统计开端 -->
-			<div style="display:none">
-				<script type="text/javascript">
-					document.write(unescape(
-						"%3Cspan id='cnzz_stat_icon_1279645265'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279645265' type='text/javascript'%3E%3C/script%3E"
-					));
-				</script>
+			<script type="text/javascript" src="./js/djtx.js"></script>
 
-			</div>
-			<!-- 统计完毕-->
-
-
-		</header>
 	</body>
 </html>
